@@ -41,6 +41,7 @@ history = model.fit_generator(train_generator,
                               callbacks = [checkpoint])
 ```
 <br>
+
 ### Testing
 <br>Load the xml file
 ``` python
