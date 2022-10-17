@@ -13,3 +13,8 @@
 
 
 ## Development
+<b>Testing</b>
+Load the xml file
+``` python
+classifier = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+```
