@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
 </div><br>
  
-<p>Project for safety against COVID-19. 
+<p>Detection of face mask in real time thought for safety against COVID-19.
 </p>
 
 ### Demo
