@@ -14,7 +14,7 @@
 
 ## Development
 ### Training
-<br>Build the Convolutional Network consists on two pairs of Conv and MaxPool layers to extract features from Dataset.
+Build the Convolutional Network consists on two pairs of Conv and MaxPool layers to extract features from Dataset.
 <br>Followed by a Flatten and Dropout layers to convert the data in 1D and ensure overfitting. 
 <br>Two Dense layer for classification.
 ``` python
@@ -32,7 +32,7 @@ model = Sequential([
 ])
 model.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['acc'])
 ```
-Training the model and save it after each epoch.
+<br>Training the model and save it after each epoch.
 ``` python
 checkpoint = ModelCheckpoint('model-{epoch:03d}.h5', monitor='val_loss', verbose = 0, save_best_only = True, mode = 'auto')
 history = model.fit_generator(train_generator,
@@ -40,17 +40,17 @@ history = model.fit_generator(train_generator,
                               validation_data = validation_generator,
                               callbacks = [checkpoint])
 ```
-
+<br>
 ### Testing
 <br>Load the xml file
 ``` python
 classifier = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 ```
-Resize the image to speed up detection
+<br>Resize the image to speed up detection
 ``` python
 mini = cv2.resize(im, (im.shape[1] // size, im.shape[0] // size))
 ```
-Detect faces
+<br>Detect faces
 ``` python
 faces = classifier.detectMultiScale(mini)
 ```
