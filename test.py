@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from tensorflow import keras
 
-model = keras.models.load_model("model-020.h5")
+model = keras.models.load_model("model-025.h5")
 
 labels_dict = {0:'without mask', 1:'mask'} # Words
 color_dict = {0:(0, 0, 255), 1:(0, 255, 0)} # Colors
