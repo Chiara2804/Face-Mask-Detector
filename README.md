@@ -10,8 +10,8 @@
 </p>
 
 ### Demo
-<img src="readme-img/mask.png" width="100%"/>
-<img src="readme-img/without_mask.png" width="100%"/>
+<img src="readme-img/mask.png"/>
+<img src="readme-img/without_mask.png"/>
 
 
 ## Development
