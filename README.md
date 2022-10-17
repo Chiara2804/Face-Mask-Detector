@@ -13,7 +13,7 @@
 
 
 ## Development
-<b>Training</b>
+### Training
 <br>Build the Convolutional Network consists on two pairs of Conv and MaxPool layers to extract features from Dataset.
 <br>Followed by a Flatten and Dropout layers to convert the data in 1D and ensure overfitting. 
 <br>Two Dense layer for classification.
@@ -41,7 +41,7 @@ history = model.fit_generator(train_generator,
                               callbacks = [checkpoint])
 ```
 
-<b>Testing</b>
+### Testing
 <br>Load the xml file
 ``` python
 classifier = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
