@@ -43,7 +43,7 @@ history = model.fit_generator(train_generator,
 <br>
 
 ### Testing
-<br>Load the xml file
+Load the xml file
 ``` python
 classifier = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 ```
